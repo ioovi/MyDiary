@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal"
+        android:background="#F1E8CC">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="47dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="6dp"
+            android:background="@null"
+            android:text="←"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="日记本"
+            android:textColor="#111212"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="47dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="6dp"
+            android:background="@null"
+            android:text="+"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>
+
